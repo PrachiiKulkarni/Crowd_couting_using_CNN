@@ -1,3 +1,4 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 Flask==1.1.1
 gunicorn==19.9.0
 itsdangerous==1.1.0
@@ -11,4 +12,5 @@ matplotlib>=1.4.3
 pandas>=0.19
 streamlit
 flasgger==0.9.4
-torch==1.8.1+cpu
+torch==1.8.1+cpu 
+torchvision==0.9.1+cpu
