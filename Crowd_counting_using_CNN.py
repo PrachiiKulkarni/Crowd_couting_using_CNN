@@ -18,6 +18,8 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__,static_folder='E:/PRACHI/Advance Python/FLASK_AP/new_prog/')
 app.config['UPLOAD_FOLDER'] = "E:/PRACHI/Advance Python/FLASK_AP/new_prog/"
 
+ALLOWED_HOSTS = ['.herokuapp.com']
+
 annots_1 = loadmat(r'mall_gt.mat')
 actual_count=[]
 for i in range(len(annots_1['count'])):
