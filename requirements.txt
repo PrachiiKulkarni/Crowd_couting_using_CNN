@@ -11,4 +11,4 @@ matplotlib>=1.4.3
 pandas>=0.19
 streamlit
 flasgger==0.9.4
-torch==1.10.1+cpu
+torch==1.8.1+cpu
