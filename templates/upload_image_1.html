@@ -1,0 +1,44 @@
+<html>
+<style>
+table.roundedCorners { 
+  border: 3px solid black;
+  border-radius: 13px; 
+  border-spacing: 0;
+  border-width:"thick";
+  }
+table.roundedCorners td, 
+table.roundedCorners th { 
+  padding: 10px; 
+  }
+table.roundedCorners tr:last-child > td {
+  border-bottom: none;
+}
+</style>
+
+   <body style="background-color: #FFFAF0;">
+      <br><br><br><br><br>
+      <form action = "http://127.0.0.1:5000/prediction" method = "POST" enctype = "multipart/form-data">
+       <center>
+        <table class="roundedCorners" style="width:50%; background-color: #DCDCDC;">
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td><center><h1 style="font-size:40px; color:#191970;">Upload file to predict no. of people in crowd!</h1></center></td>
+        <tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td><center><h2><input type = "file" name = "file" /></h2></center></td>
+        </tr>
+        <tr>
+          <td><center>
+             <h3><input type = "submit" /></h3>
+             <div id="feedback"></div>
+              <label id="progress-label" for="progress" ></label>
+              <progress id="progress" value="0" max="100"> </progress>
+           </center>
+          </td>
+        </tr>
+        </table>
+      </form>
+   </body>
+</html>    
